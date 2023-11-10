@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import './Navbar.css';
+import {Link} from 'react-router-dom';
 
 function Navbar() {
     const[isOpen, setIsOpen]=useState(false);
@@ -10,10 +11,10 @@ function Navbar() {
                 <div className= {`menuIcon ${isOpen ? 'visible' : ''}`}></div>
             </button>
             <ul className={`link-list ${isOpen ? 'show' : ''}`}>
-                <li>Home</li>
-                <li>Calendar</li>
-                <li>Progress</li>
-                <li>Add</li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/calendar">Calendar</Link></li>
+                <li><Link to="/progress">Progress</Link></li>
+                <li><Link to="/add">Add</Link></li>
             </ul>
             <button className='quick-add-button'>
                 <i className="fa-solid fa-plus"></i>
