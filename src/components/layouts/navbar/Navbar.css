@@ -1,0 +1,112 @@
+.navbar-container{
+    color:grey;
+    padding:2vh 0;
+    background-color: rgba(223, 227, 231, 0.525);
+    width:100%;
+    margin:0;
+    font-size:1rem;
+    font-weight:700;
+    font-family:'Comfortaa', sans-serif;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .link-list{
+    display:flex;
+    gap:2vw;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type:none;
+    padding-right:5%;
+  }
+  
+  .hamburger-menu{
+    position:absolute;
+    left:4vw;
+    width:30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1000;
+    background-color: rgba(230, 221, 221, 0);
+    border:none;
+    display: none;
+  }
+  .menuIcon,
+  .menuIcon:before,
+  .menuIcon:after {
+    content:'';
+    position:absolute;
+    height: 3px;
+    width: 30px;
+    background-color: rgb(165, 159, 159);
+    border-radius: 10px;
+    left:0;
+    display:block;
+    transition:transform 0.3s ease-in-out;
+  }
+  .menuIcon::before{
+    top: -10px;
+  }
+  .menuIcon::after {
+    bottom:-10px;
+  }
+  
+  .menu-icon.open::before {
+    transform: translateY(0) rotate(45deg);
+  }
+  
+  .menu-icon.open::after {
+    transform: translateY(0) rotate(-45deg);
+  }
+  .hamburger-menu.visible{
+    display:block;
+  }
+  .quick-add-button{
+    height:30px;
+    width:30px;
+    display:none;
+    border: none;
+    cursor: pointer;
+    font-weight: 800;
+    color:rgb(165, 159, 159);
+    font-size: 1.5rem;
+    padding-right:15%;
+  }
+  
+  
+  
+  @media (max-width:640px){
+    .hamburger-menu {
+      display: block;
+    }
+    .quick-add-button{
+      display:block;
+    }
+    .link-list {
+      display: none;
+      flex-direction: column; 
+      position: absolute; 
+      top: 37px;
+      left: 0;
+      background-color:rgb(223, 227, 231);
+      width:100%;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+      z-index: 1;
+    }
+  
+    .link-list.show {
+      display: flex;
+      align-items: flex-start;
+   
+    }
+  }
+  @media (min-width:660px){
+    .link-list{
+      font-size: 1.3rem;
+    }
+  }
+  @media (min-width:1000px){
+    .link-list{
+      font-size: 2rem;
+    }
+  }
