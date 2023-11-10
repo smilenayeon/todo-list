@@ -24,6 +24,8 @@ function Add() {
       });
       setNewItem('');// Clear the input after submitting
       navigate('/');
+    } else {
+      alert("You forgot to enter the new item.");
     }
   };
   return (

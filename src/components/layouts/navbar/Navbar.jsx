@@ -17,7 +17,7 @@ function Navbar() {
                 <li><Link to="/add">Add</Link></li>
             </ul>
             <button className='quick-add-button'>
-                <i className="fa-solid fa-plus"></i>
+                <Link to="/add"><i className="fa-solid fa-plus"></i></Link>
             </button>
 
     </div>

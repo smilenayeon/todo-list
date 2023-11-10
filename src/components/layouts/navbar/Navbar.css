@@ -10,6 +10,8 @@
     display:flex;
     justify-content: flex-end;
     align-items: center;
+    height:5vh;
+    
   }
   .link-list{
     display:flex;
@@ -86,7 +88,7 @@
       display: none;
       flex-direction: column; 
       position: absolute; 
-      top: 37px;
+      top: 6.5vh;
       left: 0;
       background-color:rgb(223, 227, 231);
       width:100%;

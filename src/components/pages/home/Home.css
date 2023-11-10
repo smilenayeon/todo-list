@@ -1,0 +1,30 @@
+.home-section{
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    flex-direction: column;
+    gap:1.2vh;
+    min-height:88vh;
+    padding-bottom:5%;
+   
+}
+.item-total-title{
+    font-size:1.5rem;
+    font-weight:700;
+    margin:3% 5% 0 5%;
+   
+}
+.item-container {
+    background-color: #a8d4ea;
+    display:flex;
+    flex-direction: column;
+    padding:5%;
+    margin:0 5%;
+    border-radius:10px;
+}
+.item-text{
+    color:#3b7570;
+    font-size:1.5rem;
+}
+.item-status{
+color:blue;
+}
