@@ -2,6 +2,8 @@ import React, {useState, useContext, useRef,useEffect} from 'react'
 import ItemContext from '../../item-context/ItemContext';
 import './Add.css';
 import {useNavigate} from 'react-router-dom';
+import ToDoList from '../../../assets/images/todo-list.jpg';
+import BluePen from '../../../assets/images/blue-pen.svg';
 
 function Add() {
   const [newItem, setNewItem] = useState("");
@@ -37,7 +39,10 @@ function Add() {
             <input ref={inputRef} className='new-item-input' type="text" name="new-item" value={newItem} onChange={(e)=> setNewItem(e.target.value)}/>
           <input className='new-item-add-button' type="submit" value="Add"/>
         </form>
-        
+        <div className="image-box">
+        <img  className="list-image" src={ToDoList} alt="to do list"/>
+        <img className="pen-image" src={BluePen} alt="blue pen"/>
+        </div>
     </div>
   )
 }

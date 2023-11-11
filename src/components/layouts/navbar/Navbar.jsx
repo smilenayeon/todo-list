@@ -8,11 +8,10 @@ function Navbar() {
   return (
     <div className='navbar-container'>
             <button className='hamburger-menu' onClick={toggleMenu}>
-                <div className= {`menuIcon ${isOpen ? 'visible' : ''}`}></div>
+                <div className= {`menu-icon ${isOpen ? 'visible' : ''}`}></div>
             </button>
             <ul className={`link-list ${isOpen ? 'show' : ''}`}>
                 <li onClick={toggleMenu}><Link to="/">Home</Link></li>
-                <li onClick={toggleMenu}><Link to="/calendar">Calendar</Link></li>
                 <li onClick={toggleMenu}><Link to="/progress">Progress</Link></li>
                 <li onClick={toggleMenu}><Link to="/add">Add</Link></li>
             </ul>
