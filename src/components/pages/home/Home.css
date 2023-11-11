@@ -25,6 +25,13 @@
     color:#3b7570;
     font-size:1.5rem;
 }
-.item-status{
-color:blue;
+.item-text.line-through {
+    text-decoration: line-through;
+}
+.item-control{
+    display: flex;
+    justify-content: space-between;
+}
+.item-status >input{
+    cursor: pointer;
 }
