@@ -1,5 +1,6 @@
-import React, { useState, useContext } from 'react';
-import ItemContext from '../../item-context/ItemContext';
+import React, { useState, useContext } from "react";
+import ItemContext from "../../item-context/ItemContext";
+import './EditItem.css';
 
 function EditItem({ item, onDone }) {
   const [editText, setEditText] = useState(item.text);
@@ -7,18 +8,18 @@ function EditItem({ item, onDone }) {
 
   const handleSave = () => {
     dispatch({
-      type: 'EDIT',
+      type: "EDIT",
       payload: { ...item, text: editText }
     });
-    onDone(); 
+    onDone();
   };
 
   return (
-    <div>
-      <input 
-        type="text" 
-        value={editText} 
-        onChange={(e) => setEditText(e.target.value)} 
+    <div className="edit-box">
+      <input
+        type="text"
+        value={editText}
+        onChange={e => setEditText(e.target.value)}
       />
       <button onClick={handleSave}>Save</button>
     </div>

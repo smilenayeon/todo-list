@@ -27,11 +27,36 @@
 }
 .item-text.line-through {
     text-decoration: line-through;
+    
 }
 .item-control{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+
 }
 .item-status >input{
     cursor: pointer;
+    height:1.1rem;
+    width: 1.1rem;
+}
+
+.item-edit-button{
+    color:#1e42a6;
+    cursor: pointer;
+}
+
+.item-delete-button{
+    color:rgb(172, 1, 1);
+    cursor:pointer;
+}
+
+@media (min-width:760px){
+    .item-control{
+        
+        justify-content:flex-start;
+        gap:3%;
+    }
 }
