@@ -11,10 +11,10 @@ function Navbar() {
                 <div className= {`menuIcon ${isOpen ? 'visible' : ''}`}></div>
             </button>
             <ul className={`link-list ${isOpen ? 'show' : ''}`}>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/calendar">Calendar</Link></li>
-                <li><Link to="/progress">Progress</Link></li>
-                <li><Link to="/add">Add</Link></li>
+                <li onClick={toggleMenu}><Link to="/">Home</Link></li>
+                <li onClick={toggleMenu}><Link to="/calendar">Calendar</Link></li>
+                <li onClick={toggleMenu}><Link to="/progress">Progress</Link></li>
+                <li onClick={toggleMenu}><Link to="/add">Add</Link></li>
             </ul>
             <button className='quick-add-button'>
                 <Link to="/add"><i className="fa-solid fa-plus"></i></Link>
