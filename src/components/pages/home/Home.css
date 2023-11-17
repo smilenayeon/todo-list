@@ -20,6 +20,7 @@
     padding:5%;
     margin:0 5%;
     border-radius:10px;
+    min-width: fit-content;
 }
 .item-text{
     color:#3b7570;
@@ -35,8 +36,8 @@
     align-items: center;
     font-size: 1.2rem;
     font-weight: 700;
-
 }
+
 .item-status >input{
     cursor: pointer;
     height:1.1rem;
